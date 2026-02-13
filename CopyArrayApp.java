@@ -25,7 +25,16 @@ public class CopyArrayApp{
     for(int i = 0; i < myVals.length; i++ ){
 
         int values = myVals[i];
+
+        // add only if not already present
+        if (!uniqueVals.contains(values)) {
+            uniqueVals.add(values);
+            }
     }
+
+    
+
+
 
     System.out.println("Unique values: " + uniqueVals);
   }
