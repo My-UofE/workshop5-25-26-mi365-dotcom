@@ -15,11 +15,11 @@ public class PassByValueApp{
    //The method argument is a reference type (class)
    public static void changeAppleColor(Apple apple){
 
-     System.out.println("apple: "+apple);//display memory address
-     apple.color = "green";
+    System.out.println("apple: "+apple);//display memory address
+    apple = new Apple("blue");
+    System.out.println("apple: "+apple);//display memory address
+    apple.color = "green";
 
-     apple = new Apple("Blue");
-     System.out.println("apple: "+apple);//display memory address
 
    }
 }
